@@ -7,3 +7,5 @@ RUN mamba install -y \
   && fix-permissions "/home/${NB_USER}" \
   && mamba clean --all -y \
   && jupyter serverextension enable nbgitpuller --sys-prefix
+
+COPY .Rprofile /home/${NB_USER}/
