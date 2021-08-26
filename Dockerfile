@@ -5,4 +5,5 @@ RUN mamba install -y \
     nbgitpuller=0.10.2 \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}" \
-  && mamba clean --all -y
+  && mamba clean --all -y \
+  && jupyter serverextension enable nbgitpuller --sys-prefix
