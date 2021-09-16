@@ -5,6 +5,7 @@ RUN mamba install -y \
     nbgitpuller=0.10.2 \
     r-palmerpenguins \
     r-patchwork \
+    r-ggrepel \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}" \
   && mamba clean --all -y \
