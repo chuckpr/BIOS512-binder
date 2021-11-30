@@ -6,6 +6,8 @@ RUN mamba install -y \
     r-palmerpenguins \
     r-patchwork \
     r-ggrepel \
+    r-glmnet \
+    r-ranger \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}" \
   && mamba clean --all -y \
