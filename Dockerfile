@@ -8,6 +8,7 @@ RUN mamba install -y \
     r-ggrepel \
     r-glmnet \
     r-ranger \
+    r-ggforce \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}" \
   && mamba clean --all -y \
