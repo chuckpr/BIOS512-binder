@@ -16,4 +16,6 @@ RUN mamba install -y -c conda-forge \
   && mamba clean --all -y \
   && jupyter serverextension enable nbgitpuller --sys-prefix
 
+COPY jupyter_notebook_config.json /home/${NB_USER}/.jupyter/
+
 COPY .Rprofile /home/${NB_USER}/
