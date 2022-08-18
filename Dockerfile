@@ -10,6 +10,7 @@ RUN mamba install -y -c conda-forge \
     r-ranger \
     r-ggforce \
     jupyterlab-tour \
+    jupyterlab-link-share \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}" \
   && mamba clean --all -y \
