@@ -1,8 +1,8 @@
 FROM jupyter/r-notebook:lab-3.4.5
 
 RUN mamba install -y -c conda-forge \
-    jupyter-offlinenotebook=0.2.1 \
-    nbgitpuller=0.10.2 \
+    jupyter-offlinenotebook \
+    nbgitpuller \
     r-palmerpenguins \
     r-patchwork \
     r-ggrepel \
