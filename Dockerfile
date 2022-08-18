@@ -1,6 +1,6 @@
-FROM jupyter/r-notebook:lab-3.1.6
+FROM jupyter/r-notebook:lab-3.4.5
 
-RUN mamba install -y \
+RUN mamba install -y -c conda-forge \
     jupyter-offlinenotebook=0.2.1 \
     nbgitpuller=0.10.2 \
     r-palmerpenguins \
@@ -9,6 +9,7 @@ RUN mamba install -y \
     r-glmnet \
     r-ranger \
     r-ggforce \
+    jupyterlab-tour \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}" \
   && mamba clean --all -y \
