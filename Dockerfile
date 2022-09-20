@@ -1,4 +1,4 @@
-FROM jupyter/r-notebook:lab-3.4.5
+FROM jupyter/r-notebook:lab-3.1.18
 
 RUN mamba install -y -c conda-forge \
     jupyter-offlinenotebook \
